@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <title>Grafos</title>
+</head>
+<body>
+    <main>
+    <nav id="Nav-Bar" class="navbar navbar-expand-lg" style="background-color: #e3f2fd;">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">INICIO</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Archivo
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="#">Abrir</a></li>
+                      <li><a class="dropdown-item" href="#">Importar</a></li>
+                      <li><a class="dropdown-item" href="#">Guardar</a></li>
+                    </ul>
+                </li>
+            </ul> 
+            
+          </div>
+          
+        </div>
+      </nav>
+      <div class="container">
+        <div>
+          <div id="texto">
+            <h1>Grafos</h1>
+            <p> Un grafo, G, es un par, compuesto por dos conjuntos V y A. Al conjunto V se le llama conjunto de
+              vértices o nodos del grafo. A es un conjunto de pares de vértices, estos pares se conocen
+              habitualmente con el nombre de arcos o ejes del grafo. Se suele utilizar la notación G = (V, A) para
+              identificar un grafo.
+              <br>
+              Ejemplo:<br>
+              G= (V,A)<br>
+              V = {A,B,C,D,E,F,G,H }<br>
+              A= { {A,B }, {B,C }, {B,E }, {B,G }, {B,H }, {C,D}, {C,E }, {D,F }, {D,E }, {E,G }, {G,H } }</p>
+            <h3>Grafo no dirigido</h3>
+            <p>
+              En un grafo no dirigido el par de vértices que representa un arco no está ordenado. Por lo
+              tanto, los pares (v1, v2) y (v2, v1) representan el mismo arco. <br>
+              A continuacion se puede crear un grafo no dirigido sin pesos con una cantidad de nodos y aristas determinadas por el usuario. 
+            </p>
+            <a class="btn btn-outline-success" href="grafoNoDirigido.html" role="">Crear grafo no dirigido</a>
+          </div>
+          
+          
+
+        </div>
+        
+        
+    </main>
+    
+    <script src="js/grafo1.js"></script><!-- Grafo no dirigido sin pesos -->
+    <script src="js/script.js"></script>
+</body>
+</html>
